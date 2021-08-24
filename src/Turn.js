@@ -1,7 +1,8 @@
 class Turn{
   constructor(guess, card) {
-    this.guess;
-    this.card;
+    this.guess = guess;
+    this.card = card;
+    this.isCorrect = null;
   }
 
   returnGuess() {
@@ -12,19 +13,21 @@ class Turn{
     return this.card;
   }
 
+
   evaluateGuess() {
     switch(this.guess) {
-      case 'this.card.correctAnswer':
-        return true;
+      case `${this.card.correctAnswer}`:
+        return this.isCorrect = true;
         break;
       default:
-        return false;
+        return this.isCorrect = false;
     }
   }
 
   giveFeedback() {
-    switch(this.evaluateGuess()) {
-      case 'true':
+    this.evaluateGuess();
+    switch(this.isCorrect) {
+      case true:
         return 'Correct!';
         break;
       default:
