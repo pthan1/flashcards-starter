@@ -11,5 +11,6 @@ Flashcards is a command-line quiz game that tests players' knowledge of Prototyp
   - OOP
 
 ## Install/Setup instructions
-  - Run index.js file on your command line.
+  - Navigate to the project's root directory in Terminal 
+  - Run 'node index.js' file on your command line.
   
