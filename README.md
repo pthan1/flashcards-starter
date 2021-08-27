@@ -7,7 +7,7 @@ Flashcards is a command-line quiz game that tests players' knowledge of Prototyp
 <img src="https://user-images.githubusercontent.com/82873669/131053149-f47e27c3-7592-4cd2-82f0-0ebe5db010c5.gif" alt="drawing" width="800"/>
 
 ## Technologies used
-  - CSS
+  - JavaScript
   - TDD: Mocha & Chai
   - OOP
 
