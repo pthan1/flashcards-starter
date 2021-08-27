@@ -10,10 +10,9 @@ class Game {
     this.currentRound;
     this.cards = [];
     this.deck;
-    this.round;
   }
 
-  printMessage(deck, round) {
+  printMessage(deck) {
       console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.`)
   }
 
@@ -24,9 +23,9 @@ class Game {
   start() {
     prototypeQuestions.forEach(question => this.cards.push(new Card(question.id, question.question, question.answers, question.correctAnswer)));
     this.deck = new Deck(this.cards);
-    this.round = new Round(this.deck.cards);
-    this.printMessage(this.deck, this.round);
-    this.printQuestion(this.round);
+    this.currentRound = new Round(this.deck.cards);
+    this.printMessage(this.deck, this.currentRound);
+    this.printQuestion(this.currentRound);
   }
 
 
