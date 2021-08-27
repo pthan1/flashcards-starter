@@ -24,9 +24,9 @@ class Game {
   start() {
     prototypeQuestions.forEach(question => this.cards.push(new Card(question.id, question.question, question.answers, question.correctAnswer)));
     this.deck = new Deck(this.cards);
-    this.currentRound = new Round(this.deck.cards);
-    this.printMessage(this.deck, this.currentRound);
-    this.printQuestion(this.currentRound);
+    this.round = new Round(this.deck.cards);
+    this.printMessage(this.deck, this.round);
+    this.printQuestion(this.round);
   }
 
 
